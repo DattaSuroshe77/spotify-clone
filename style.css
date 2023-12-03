@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@300;400;700&family=Satisfy&family=Ubuntu:ital,wght@0,400;1,300&display=swap'); 
+body{
+    background-color: antiquewhite;
+    font-family: 'Italianno', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-height: 70vh;
+    font-family:'Ubuntu' ;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 13px;
+    padding: 30px;
+    background-image: url(covers/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height: 70px;
+    color: #fff;
+}
+
+
+nav ul li{
+    padding: 0 60px;
+    cursor: pointer;
+
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.brand img{
+    width: 45px;
+    padding: 0 8px;
+  
+}
+button{
+    font-family:'Ubuntu' ;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: 22px;
+    cursor: pointer;
+    background-color:#1ED760 ;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 15px;
+
+}
+.icons i{
+    cursor: pointer;
+    padding-right: 10px;
+}
+#myprogressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItem{
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    height: 80px;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.songItem span{
+    padding-left: 20px;
+}
+.songItem i{
+    padding-left: 20px;
+}
+.songItem img{
+    width: 90px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 23px;
+}
+.time{
+    margin: 0 20px;
+}
+.time i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 60px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family:'Ubuntu' ;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+   
+}
+@media (max-width:799px) {
+    nav{
+        width: 100%;
+    }
+    nav ul li {
+      padding-right: 0;
+      padding-left: 30px;
+       
+    }
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 13px;
+        padding: 30px;
+       
+    }
+    .songItem span {
+        padding-left: 10px;
+    }
+    
+}
+@media (max-width:477px) {
+    .container {
+        
+        width: 80%;
+        padding: 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+      left: -400px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40pc 60px rgb(0, 0, 0, 0.1);
+        padding: 40px 0 0 10px;
+        transition: 0.3s;
+    }
+    nav .active{
+        left: 0;
+    }
+      
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: navajowhite;
+        height: 100%;
+        color: #fff;
+        width: 40%;
+       
+        
+    }
+    nav ul li {
+        padding-left: 0;
+     padding-top: 20px;
+     width: 90%;
+    }
+    .songItem {
+        display: flex;
+        background-color: #fff;
+        color: #000;
+        height: 70px;
+        width: 90%;
+    }
+    .songItem img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0 13px;
+    }
+    .songItem span {
+        padding-left: 3px;
+       
+    }
+    .time {
+        margin: 10px 40px;
+        display: flex;
+    }
+    span.time{
+        margin: 6px;
+    }
+    .icons {
+        margin-top: 50px;
+        font-size: 13px;
+    }
+    #masterSongName{
+        font-size: 15px;
+
+       
+    }
+    .songInfo {
+        left: 16vw;
+    }
+}
